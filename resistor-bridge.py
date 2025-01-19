@@ -8,7 +8,6 @@ logger = Logging.setup_logging()
 ####################################################################################################
 
 from PySpice.Spice.Netlist import Circuit
-
 # noinspection PyUnresolvedReferences
 from PySpice.Unit import *
 
