@@ -73,7 +73,8 @@ for node in analysis.nodes.values():
 circuit = Circuit('Current Divider')
 
 # 定義輸入電流源 I(input)，電流為 1 安培
-circuit.I('input', 1, circuit.gnd, 1@u_A) # Fixme: 調整輸入電流值
+# 這個地方u_A要改成u_V，結果才是對的...?
+circuit.I('input', 1, circuit.gnd, 1@u_V) # Fixme: 調整輸入電流值
 # 定義兩個並聯的電阻 R1 和 R2，分別為 2kΩ 和 1kΩ
 circuit.R(1, 1, circuit.gnd, 2@u_kΩ)
 circuit.R(2, 1, circuit.gnd, 1@u_kΩ)
