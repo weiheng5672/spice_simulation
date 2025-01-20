@@ -1,0 +1,7 @@
+example_3-1
+V1 in 0 DC 120
+R1 in node1 4
+R2 node1 node2 3
+R3 node1 0 18
+R4 node2 0 6
+.end
